@@ -8,7 +8,7 @@ const CardComp1 = ({ id, name, role }) => {
         flex flex-col items-center justify-center
         rounded-2xl shadow-lg cursor-grab
         hover:shadow-xl hover:scale-[1.03]
-        transition-all duration-300 ease-in-out
+        transition-all duration-500 ease-in-out
         p-4 text-center
       "
     >

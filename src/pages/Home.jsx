@@ -20,7 +20,6 @@ const initialRight = [
   { id: 205, name: "Vikram Reddy", role: "Data Analyst" },
 ];
 
-
 const Home = () => {
   const [leftItems, setLeftItems] = useState(initialLeft);
   const [rightItems, setRightItems] = useState(initialRight);
@@ -80,11 +79,13 @@ const Home = () => {
 
   return (
     <div className="flex flex-col items-center  w-full h-full px-2">
-      <div className="grid grid-cols-1 md:grid-cols-2 h-full w-full border-2 border-black rounded-lg overflow-hidden 
-  ">
+      <div
+        className="grid grid-cols-1 md:grid-cols-2 h-full w-full border-2 border-black rounded-lg overflow-hidden 
+  "
+      >
         <div
           ref={leftRef}
-          className="grid grid-cols-2 xl:grid-cols-3 border-b md:border-b-0 md:border-r border-gray-400 p-2"
+          className="grid grid-cols-2 xl:grid-cols-3 border-b md:border-b-0 md:border-r border-gray-400 p-2   transition-all duration-500 ease-in-out"
         >
           {leftItems.map((item, id) => (
             <div

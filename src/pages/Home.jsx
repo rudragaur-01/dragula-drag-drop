@@ -85,7 +85,7 @@ const Home = () => {
       >
         <div
           ref={leftRef}
-          className="grid grid-cols-2 xl:grid-cols-3 border-b md:border-b-0 md:border-r border-gray-400 p-2   transition-all duration-500 ease-in-out"
+          className="grid grid-cols-2 xl:grid-cols-3 border-b md:border-b-0 md:border-r border-gray-400 p-2   transition-all duration-300 ease-in-out"
         >
           {leftItems.map((item, id) => (
             <div

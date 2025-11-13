@@ -2,17 +2,18 @@ const CardComp1 = ({ id, name, role }) => {
   return (
     <div
       className="
+       cursor-grab
         w-full h-full
-        bg-gradient-to-br from-red-500 to-pink-600
-        text-white
+        bg-primary
+      text-primary-foreground
         flex flex-col items-center justify-center
-        rounded-2xl shadow-lg cursor-grab
+        rounded-2xl shadow-lg 
         hover:shadow-xl hover:scale-[1.03]
-        transition-all duration-500 ease-in-out
+       
         p-4 text-center
       "
     >
-      <span className="text-sm md:text-md lg:text-lg font-bold text-black mb-1">
+      <span className="text-sm md:text-md lg:text-lg font-bold text-white mb-1">
         {id}.
       </span>
 
@@ -20,7 +21,9 @@ const CardComp1 = ({ id, name, role }) => {
         {name}
       </h3>
 
-      <p className="text-[11px] md:text-sm lg:text-md opacity-90 break-words">{role}</p>
+      <p className="text-[11px] md:text-sm lg:text-md opacity-90 break-words">
+        {role}
+      </p>
     </div>
   );
 };

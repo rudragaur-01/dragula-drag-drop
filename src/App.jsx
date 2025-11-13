@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="h-[100vh] w-full  flex flex-col">
       <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 mt-6 text-center">
-        Drag, Drop & Arrange
+       Drag & Drop Playground
       </h1>
 
       <main className="flex-1 mt-6 px-2">
